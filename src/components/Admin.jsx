@@ -24,6 +24,11 @@ function Admin({ users, addUser, setUsers }) {
     setUsers(updatedUser);
   };
 
+  const deleteAll = () => {
+    const newArray = [];
+    setUsers(newArray);
+  };
+
   return (
     <div className="flex flex-col items-center">
       <h3 className="font-bold text-4xl mb-3">Home - Admin Sector</h3>
@@ -104,6 +109,12 @@ function Admin({ users, addUser, setUsers }) {
           ))}
         </tbody>
       </table>
+      <button
+        onClick={deleteAll}
+        className="my-1 px-2 text-white rounded-lg bg-red-500 hover:bg-red-700"
+      >
+        Delete All user
+      </button>
     </div>
   );
 }
