@@ -6,7 +6,7 @@ function Owner() {
       <div className="flex flex-col items-center">
         <h2 className="font-bold text-4xl mt-10">Noopuk-Group G-09</h2>
         <img
-          src="src\assets\noopuk.jpg"
+          src="/noopuk.jpg"
           alt="Noopuk"
           className="w-[300px] h-[300px] m-4"
         />
