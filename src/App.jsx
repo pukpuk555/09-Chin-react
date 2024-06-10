@@ -9,11 +9,16 @@ import User from "./components/User";
 function App() {
   const [users, setUsers] = useState([]);
 
-  console.log(users);
-
   const addUser = (newUser) => {
     setUsers([...users, { ...newUser, id: `n${users.length + 1}` }]);
   };
+
+  useEffect(() => {
+    const welcomeAlert = () => {
+      alert("Welcome To My React Assesment");
+    };
+    welcomeAlert();
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -53,7 +58,7 @@ function App() {
             <h1 className="font-bold text-4xl mt-10 mb-3">
               Generation Thailand
             </h1>
-            <User />
+            <User users={users} />
           </div>
         </div>
       ),

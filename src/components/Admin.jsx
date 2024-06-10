@@ -95,7 +95,7 @@ function Admin({ users, addUser, setUsers }) {
               <td className="px-3 border-2 flex justify-center">
                 <button
                   onClick={() => deleteUser(user.id)}
-                  className="my-1 px-2 text-white rounded-lg bg-red-500"
+                  className="my-1 px-2 text-white rounded-lg bg-red-500 hover:bg-red-700"
                 >
                   Delete
                 </button>
